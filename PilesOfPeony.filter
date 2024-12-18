@@ -167,9 +167,14 @@ SetTextColor 255 207 132
 SetBorderColor 255 207 132
 MinimapIcon 2 Grey Circle
 
+Hide
+Class "Currency"
+BaseType "Wisdom"
+
 Show
 Class "Currency"
-BaseType "Wisdom" "Shard"
+BaseType "Shard"
+
 
 # Unknown currency
 Show
