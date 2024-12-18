@@ -300,6 +300,11 @@ DropLevel >= 65
 SetBorderColor 200 200 200
 SetFontSize 40
 
+Hide
+Rarity <= Magic
+Class "Quarterstaves"
+AreaLevel >= 60
+
 Show
 Class "Staves"
 DropLevel >= 65
