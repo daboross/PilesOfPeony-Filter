@@ -224,15 +224,15 @@ MinimapIcon 1 Yellow Diamond
 # Rings, Amulets, Belts
 #--------------------------
 
-Show
-Rarity Normal
-Class "Rings" "Amulets" "Belts"
-SetFontSize 40
+# Show
+# Rarity Normal
+# Class "Rings" "Amulets" "Belts"
+# SetFontSize 40
 
-Show
-Class "Rings" "Amulets" "Belts"
-Rarity Magic
-SetFontSize 40
+# Show
+# Class "Rings" "Amulets" "Belts"
+# Rarity Magic
+# SetFontSize 40
 
 #--------------------------
 # Salvagable Items
@@ -295,23 +295,24 @@ SetFontSize 35
 ### Bows
 
 Show
-BaseType "Advanced Zealot Bow" "Expert Shortbow" "Expert Composite Bow" "Expert Warden Bow" "Expert Dualstring Bow" "Expert Zealot Bow" "Volant Quiver" "Visceral Quiver" "Primed Quiver" "Blunt Quiver" "Two-Point Quiver" "Sacral Quiver" "Expert Firm Bracers" "Expert Sectioned Bracers" "Expert Spined Bracers" "Expert Sombre Gloves" "Expert Jewelled Gloves" "Expert Intricate Gloves" "Expert Laced Boots" "Expert Steeltoe Boots" "Expert Lizardscale Boots" "Expert Wrapped Sandals" "Expert Silk Slippers" "Expert Feathered Sandals" "Expert Pathfinder Coat" "Expert Studded Vest" "Expert Serpentscale Coat" "Expert Hexer's Robe" "Expert Keth Raiment" "Expert Altar Robe" "Expert Felt Cap" "Expert Swathed Cap" "Expert Hunter Hood" "Expert Wicker Tiara" "Expert Chain Tiara" "Expert Feathered Tiara" "Ultimate Mana Flask" "Ultimate Life Flask" "Chiming Staff"
+# BaseType "Advanced Zealot Bow" "Expert Shortbow" "Expert Composite Bow" "Expert Warden Bow" "Expert Dualstring Bow" "Expert Zealot Bow" "Volant Quiver" "Visceral Quiver" "Primed Quiver" "Blunt Quiver" "Two-Point Quiver" "Sacral Quiver" "Expert Firm Bracers" "Expert Sectioned Bracers" "Expert Spined Bracers" "Expert Sombre Gloves" "Expert Jewelled Gloves" "Expert Intricate Gloves" "Expert Laced Boots" "Expert Steeltoe Boots" "Expert Lizardscale Boots" "Expert Wrapped Sandals" "Expert Silk Slippers" "Expert Feathered Sandals" "Expert Pathfinder Coat" "Expert Studded Vest" "Expert Serpentscale Coat" "Expert Hexer's Robe" "Expert Keth Raiment" "Expert Altar Robe" "Expert Felt Cap" "Expert Swathed Cap" "Expert Hunter Hood" "Expert Wicker Tiara" "Expert Chain Tiara" "Expert Feathered Tiara" "Ultimate Mana Flask" "Ultimate Life Flask" "Chiming Staff"
+BaseType "Ultimate Mana Flask" "Ultimate Life Flask" "Chiming Staff"
 DropLevel >= 65
 SetBorderColor 200 200 200
 SetFontSize 40
 
+# Hide
+# Rarity <= Magic
+# Class "Quarterstaves"
+# AreaLevel >= 60
+
+# Show
+# Class "Staves"
+# DropLevel >= 65
+# SetBorderColor 200 200 200
+# SetFontSize 40
+
 Hide
 Rarity <= Magic
-Class "Quarterstaves"
-AreaLevel >= 60
-
-Show
-Class "Staves"
-DropLevel >= 65
-SetBorderColor 200 200 200
-SetFontSize 40
-
-Hide
-Rarity <= Magic
-Class "Flasks" "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "Quivers" "One Hand Maces" "Two Hand Maces" "Staves" "Quarterstaves" "Bows" "Crossbows" "Wands" "Sceptres"
+Class "Flasks" "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "Quivers" "One Hand Maces" "Two Hand Maces" "Staves" "Quarterstaves" "Bows" "Crossbows" "Wands" "Sceptres" "Rings" "Amulets" "Belts"
 AreaLevel >= 60
