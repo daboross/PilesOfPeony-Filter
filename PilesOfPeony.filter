@@ -112,12 +112,9 @@ MinimapIcon 1 Cyan Triangle
 SetFontSize 40
 
 # Gems up to level 18 in maps don't get a special highlight
-Show
+Hide
 ItemLevel <= 18
 BaseType "Uncut Skill Gem"
-SetTextColor 20 240 240
-SetBorderColor 20 240 240
-SetFontSize 35
 
 Show
 BaseType "Uncut Support Gem"
@@ -362,7 +359,7 @@ SetFontSize 40
 #--------------------------
 
 Hide
-WaystoneTier < 12
+WaystoneTier < 7
 # AreaLevel > 77
 BaseType "Waystone"
 Rarity <= Rare
@@ -447,11 +444,11 @@ SetFontSize 40
 # SetBorderColor 0 0 200
 # SetFontSize 35
 #
-Show
-Quality > 1
-Rarity Magic
-SetBorderColor 0 0 200
-SetFontSize 35
+# Show
+# Quality > 1
+# Rarity Magic
+# SetBorderColor 0 0 200
+# SetFontSize 35
 
 #--------------------------
 # Random Rares
@@ -464,6 +461,12 @@ SetFontSize 35
 # DropLevel < 50
 # AreaLevel > 72
 # SetFontSize 35
+
+Show
+Class "Shields" "Foci" "One Hand Maces" "Two Hand Maces" "Staves" "Quarterstaves" "Crossbows" "Wands" "Sceptres"
+Rarity Rare
+AreaLevel > 77
+SetFontSize 20
 
 Show
 Rarity Rare
@@ -570,3 +573,5 @@ Class "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "Quivers" "One 
 Rarity <= Rare
 AreaLevel >= 60
 AreaLevel <= 79
+
+
